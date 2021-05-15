@@ -40,7 +40,7 @@ public class StoreServiceImpl implements StoreService {
         return storeRepository.findById(id)
                 .map(newStore -> {
                     newStore.setName(store.getName());
-                    newStore.setContact(store.getContact());
+               
                     newStore.setDescription(store.getDescription());
                     newStore.setLocation(store.getLocation());
                     return storeRepository.save(newStore);
