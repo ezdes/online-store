@@ -1,5 +1,7 @@
-# online-store
+# Online store written in the Spring Framework.
 
-## deployed to heroku!
+## Deployed to heroku!
 
-### the working code is in the dev branch
+### The working code is in the dev branch
+
+
