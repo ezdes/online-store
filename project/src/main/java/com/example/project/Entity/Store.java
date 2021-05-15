@@ -23,8 +23,4 @@ public class Store extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "location_id", referencedColumnName = "id")
     Location location;
-
-    @ManyToOne
-    @JoinColumn(name = "contact_id", referencedColumnName = "id")
-    Contact contact;
 }
