@@ -65,6 +65,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.DELETE, "/stores/**").hasRole("ADMIN")
                 .antMatchers(HttpMethod.PUT, "/stores/**").hasRole("ADMIN")
                 .antMatchers(HttpMethod.GET, "/stores/**").permitAll()
+                .antMatchers("/swagger-ui.html/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
