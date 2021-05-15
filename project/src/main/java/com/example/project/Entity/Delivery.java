@@ -22,6 +22,6 @@ public class Delivery extends BaseEntity {
     Double price;
 
     @ManyToOne
-    @JoinColumn(name = "supplier_id", referencedColumnName = "id")
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
     User user;
 }
